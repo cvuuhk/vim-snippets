@@ -1,0 +1,33 @@
+snippet g "graph" b
+graph ${1:graph_name}{
+	${2}
+}
+endsnippet
+
+snippet di "digraph" b
+digraph ${1:graph_name}{
+	fontname=阿里巴巴普惠体
+	node[shape=${2:box},fontname=阿里巴巴普惠体]
+	${0}
+}
+endsnippet
+
+snippet lab "label" b
+${1:label_name} [label="${2:label_name}"${3}]
+endsnippet
+
+snippet to "point to" b
+${1} -> ${2} [label="${3:label_name}"]
+endsnippet
+
+snippet sub "subgraph" b
+subgraph cluster_${1:subgraph_name}{
+	fontname=阿里巴巴普惠体
+	label="${2:label_name}";
+	${3}
+}
+endsnippet
+
+snippet fn "font" b
+fontname=阿里巴巴普惠体
+endsnippet
